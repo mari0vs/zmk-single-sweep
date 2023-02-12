@@ -1,0 +1,7 @@
+if SHIELD_SINGLESWEEP
+
+config ZMK_KEYBOARD_NAME
+
+default "SingleSweep"
+
+endif
