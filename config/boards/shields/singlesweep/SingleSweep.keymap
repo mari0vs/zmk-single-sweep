@@ -25,7 +25,7 @@
         default_layer {
             bindings = <
 
-            &kp Z       &kp Y       &kp F       &kp P       &td_comma
+            &kp Z       &kp Y       &kp F       &kp P       &kp COMMA
 
             &hm LSHFT O &hm LGUI A  &hm LALT I  &hm LCTRL E &kp U
 
