@@ -31,7 +31,7 @@
 
             &kp X       &kp C       &kp V       &kp G       &kp SQT
 
-                                                &lo 2 BSPC       &lo 1 SPACE
+                                                &kp BSPC       &kp SPACE
             >;
         };
     };
