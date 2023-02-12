@@ -264,6 +264,35 @@
             bindings = <&kp CAPS>;
         };
 //
+//fn
+        combo_f9 {
+            timeout-ms = <80>;
+            layers = <6>;
+            key-positions = <1 2>;
+            bindings = <&kp F9>;
+        };
+
+        combo_f10 {
+            timeout-ms = <80>;
+            layers = <6>;
+            key-positions = <2 3>;
+            bindings = <&kp F10>;
+        };
+
+        combo_f11 {
+            timeout-ms = <80>;
+            layers = <6>;
+            key-positions = <6 7>;
+            bindings = <&kp F11>;
+        };
+
+        combo_f12 {
+            timeout-ms = <80>;
+            layers = <6>;
+            key-positions = <7 8>;
+            bindings = <&kp F12>;
+        };
+//
     };
 
     keymap {
@@ -279,6 +308,19 @@
             &sk LGUI    &sk LALT    &sk LSHFT   &sk LCTRL   &kp RET
 
                                                 &kp BSPC    &lo 6 SPACE
+            >;
+        };
+
+        SYS_layer {
+            bindings = <
+
+            &bt BT_CLR  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp C_VOL_UP
+
+            &kp C_MUTE  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
+
+            &td_rsbl    &ext_power EP_OFF   &out OUT_USB    &ext_power EP_ON    &none
+
+                                                &none       &trans
             >;
         };
 
@@ -298,11 +340,11 @@
         NUM_layer {
             bindings = <
 
-            &none       &kp N1      &kp N2      &kp N3      &trans
+            &sk GUI     &kp N1      &kp N2      &kp N3      &sk LCTRL
 
-            &kp N0      &kp N4      &kp N5      &kp N6      &trans
+            &kp N0      &kp N4      &kp N5      &kp N6      &sk LSHFT
 
-            &trans      &trans      &trans      &trans      &trans
+            &kp RET     &kp N7      &kp N8      &kp N9      &sk LALT
 
                                                 &trans      &trans
             >;
@@ -334,27 +376,14 @@
             >;
         };
 
-        SYS_layer {
-            bindings = <
-
-            &bt BT_CLR  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp C_VOL_UP
-
-            &kp C_MUTE  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
-
-            &td_rsbl    &ext_power EP_OFF   &out OUT_USB    &ext_power EP_ON    &none
-
-                                                &none       &trans
-            >;
-        };
-
         LS_layer {
             bindings = <
 
             &none       &none       &none       &none       &none
 
-            &to 0       &to 1       &to 2       &to 3       &to 4
+            &to 1       &to 2       &to 3       &to 4       &to 5
 
-            &none       &none       &none       &to 5       &none
+            &none       &none       &none       &to 0       &none
 
                                                 &none       &trans
             >;
