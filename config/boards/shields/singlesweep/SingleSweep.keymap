@@ -289,7 +289,7 @@
 
             &kp C_MUTE  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
 
-            &td_rsbl    &ext_power EP_OFF   &out OUT_USB    &ext_power EP_ON    &none
+            &td_rsbl    &ext_power EP_OFF   &out OUT_TOG    &ext_power EP_ON    &none
 
                                                 &none       &trans
             >;
