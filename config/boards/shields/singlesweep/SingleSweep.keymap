@@ -147,14 +147,14 @@
         combo_f {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 2 8>;
+            key-positions = <2 8>;
             bindings = <&kp F>;
         };
 
         combo_g {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <2 8>;
+            key-positions = <3 7>;
             bindings = <&kp G>;
         };
 
@@ -203,7 +203,7 @@
         combo_q {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <3 6 7>;
+            key-positions = <1 2 8>;
             bindings = <&kp Q>;
         };
 
@@ -282,19 +282,6 @@
             >;
         };
 
-        SYS_layer {
-            bindings = <
-
-            &bt BT_CLR  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp C_VOL_UP
-
-            &kp C_MUTE  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
-
-            &td_rsbl    &ext_power EP_OFF   &out OUT_USB    &ext_power EP_ON    &none
-
-                                                &trans      &trans
-            >;
-        };
-
         NAV_layer {
             bindings = <
 
@@ -347,16 +334,29 @@
             >;
         };
 
+        SYS_layer {
+            bindings = <
+
+            &bt BT_CLR  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp C_VOL_UP
+
+            &kp C_MUTE  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
+
+            &td_rsbl    &ext_power EP_OFF   &out OUT_USB    &ext_power EP_ON    &none
+
+                                                &none       &trans
+            >;
+        };
+
         LS_layer {
             bindings = <
 
             &none       &none       &none       &none       &none
 
-            &to 1       &to 2       &to 3       &to 4       &to 5
+            &to 0       &to 1       &to 2       &to 3       &to 4
 
-            &none       &none       &none       &to 0       &none
+            &none       &none       &none       &to 5       &none
 
-                                                &trans      &trans
+                                                &none       &trans
             >;
         };
     };
