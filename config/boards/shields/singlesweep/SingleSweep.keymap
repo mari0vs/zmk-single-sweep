@@ -147,14 +147,14 @@
         combo_f {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <2 8>;
+            key-positions = <2 6>;
             bindings = <&kp F>;
         };
 
         combo_g {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <3 7>;
+            key-positions = <3 6>;
             bindings = <&kp G>;
         };
 
@@ -196,14 +196,14 @@
         combo_p {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <2 6>;
+            key-positions = <2 8>;
             bindings = <&kp P>;
         };
 
         combo_q {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 5>;
+            key-positions = <1 8>;
             bindings = <&kp Q>;
         };
 
