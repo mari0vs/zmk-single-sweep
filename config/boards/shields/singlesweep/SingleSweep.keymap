@@ -230,12 +230,12 @@
             bindings = <&kp LSHFT>;
         };
 
-        combo_ctrl {
+        combo_gui {
             timeout-ms = <60>;
             layers = <0 1 2 3 4>;
             slow-release;
             key-positions = <6 16>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp LGUI>;
         };
 
         combo_alt {
@@ -246,12 +246,12 @@
             bindings = <&kp LALT>;
         };
 
-        combo_gui {
+        combo_ctrl {
             timeout-ms = <60>;
             layers = <0 1 2 3 4>;
             slow-release;
             key-positions = <8 16>;
-            bindings = <&kp LGUI>;
+            bindings = <&kp LCTRL>;
         };
 //
 //control
@@ -283,7 +283,7 @@
 
             &kp Z       &kp Y       &kp D       &kp N       &kp RET
 
-                                                &kp     &lo 6 SPACE
+                                                &to 6       &lo 6 SPACE
             >;
         };
 
