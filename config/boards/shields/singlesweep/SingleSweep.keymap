@@ -225,7 +225,7 @@
         combo_shft {
             timeout-ms = <60>;
             layers = <0 1 2 3 4>;
-            slow-release = (true);
+            slow-release = "true";
             key-positions = <5 16>;
             bindings = <&kp LSHFT>;
         };
@@ -233,7 +233,7 @@
         combo_ctrl {
             timeout-ms = <60>;
             layers = <0 1 2 3 4>;
-            slow-release = (true);
+            slow-release = "true";
             key-positions = <6 16>;
             bindings = <&kp LCTRL>;
         };
@@ -241,7 +241,7 @@
         combo_alt {
             timeout-ms = <60>;
             layers = <0 1 2 3 4>;
-            slow-release = (true);
+            slow-release = "true";
             key-positions = <7 16>;
             bindings = <&kp LALT>;
         };
@@ -249,7 +249,7 @@
         combo_gui {
             timeout-ms = <60>;
             layers = <0 1 2 3 4>;
-            slow-release = (true);
+            slow-release = "true";
             key-positions = <8 16>;
             bindings = <&kp LGUI>;
         };
