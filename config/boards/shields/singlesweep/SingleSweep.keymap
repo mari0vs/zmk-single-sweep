@@ -126,7 +126,7 @@
         combo_b {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 2 3>;
+            key-positions = <11 12>;
             bindings = <&kp B>;
         };
 
@@ -135,13 +135,6 @@
             layers = <0>;
             key-positions = <1 3>;
             bindings = <&kp C>;
-        };
-
-        combo_d {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <6 7>;
-            bindings = <&kp D>;
         };
 
         combo_f {
@@ -154,7 +147,7 @@
         combo_g {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <3 6>;
+            key-positions = <2 8>;
             bindings = <&kp G>;
         };
 
@@ -189,22 +182,15 @@
         combo_m {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <6 7 8>;
+            key-positions = <12 13>;
             bindings = <&kp M>;
         };
 
         combo_p {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <2 8>;
+            key-positions = <1 3>;
             bindings = <&kp P>;
-        };
-
-        combo_q {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <1 8>;
-            bindings = <&kp Q>;
         };
 
         combo_u {
@@ -224,44 +210,63 @@
         combo_w {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <0 3>;
+            key-positions = <6 7>;
             bindings = <&kp W>;
         };
 
         combo_x {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <0 2>;
+            key-positions = <5 6>;
             bindings = <&kp X>;
         };
-
-        combo_y {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <5 6>;
-            bindings = <&kp Y>;
+//
+//mods
+        combo_shft {
+            timeout-ms = <60>;
+            layers = <0 1 2 3 4>;
+            slow-release = true;
+            key-positions = <5 16>;
+            bindings = <&kp LSHFT>;
         };
 
-        combo_z {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <0 1>;
-            bindings = <&kp Z>;
+        combo_ctrl {
+            timeout-ms = <60>;
+            layers = <0 1 2 3 4>;
+            slow-release = true;
+            key-positions = <6 16>;
+            bindings = <&kp LCTRL>;
+        };
+
+        combo_alt {
+            timeout-ms = <60>;
+            layers = <0 1 2 3 4>;
+            slow-release = true;
+            key-positions = <7 16>;
+            bindings = <&kp LALT>;
+        };
+
+        combo_gui {
+            timeout-ms = <60>;
+            layers = <0 1 2 3 4>;
+            slow-release = true;
+            key-positions = <8 16>;
+            bindings = <&kp LGUI>;
         };
 //
 //control
-        combo_del {
+        combo_esc {
             timeout-ms = <60>;
             layers = <0>;
             key-positions = <4 16>;
-            bindings = <&kp DEL>;
+            bindings = <&kp ESC>;
         };
 
-        combo_caps {
+        combo_del {
             timeout-ms = <60>;
             layers = <0>;
-            key-positions = <12 16>;
-            bindings = <&kp CAPS>;
+            key-positions = <9 16>;
+            bindings = <&kp DEL>;
         };
 //
     };
@@ -272,26 +277,13 @@
         DEF_layer {
             bindings = <
 
-            &kp O       &kp I       &kp E       &kp N       &kp ESC
+            &kp Q       &kp O       &kp I       &kp E       &kp TAB
 
-            &kp A       &kp R       &kp S       &kp T       &kp TAB
+            &kp A       &kp R       &kp S       &kp T       &kp BSPC
 
-            &sk LGUI    &sk LALT    &sk LSHFT   &sk LCTRL   &kp RET
+            &kp Z       &kp Y       &kp D       &kp N       &kp RET
 
-                                                &kp BSPC    &lo 6 SPACE
-            >;
-        };
-
-        SYS_layer {
-            bindings = <
-
-            &bt BT_CLR  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp C_VOL_UP
-
-            &kp C_MUTE  &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
-
-            &td_rsbl    &ext_power EP_OFF   &out OUT_TOG    &ext_power EP_ON    &none
-
-                                                &none       &trans
+                                                &kp     &lo 6 SPACE
             >;
         };
 
@@ -311,11 +303,11 @@
         NUM_layer {
             bindings = <
 
-            &sk GUI     &kp N1      &kp N2      &kp N3      &sk LCTRL
+            &none       &kp N1      &kp N2      &kp N3      &trans
 
-            &kp N0      &kp N4      &kp N5      &kp N6      &sk LSHFT
+            &kp N0      &kp N4      &kp N5      &kp N6      &trans
 
-            &kp RET     &kp N7      &kp N8      &kp N9      &sk LALT
+            &none       &kp N7      &kp N8      &kp N9      &trans
 
                                                 &trans      &trans
             >;
@@ -324,11 +316,11 @@
         SYM_layer {
             bindings = <
 
-            &td_grave   &td_brc     &td_bkt     &td_par     &td_bslh
+            &td_grave   &td_bslh    &td_minus   &td_equal   &trans
 
-            &td_fslh    &td_sqt     &td_comma   &td_dot     &td_minus
+            &td_fslh    &td_sqt     &td_comma   &td_dot     &trans
 
-            &trans      &trans      &trans      &trans      &td_equal
+            &none       &td_brc     &td_bkt     &td_par     &trans
 
                                                 &trans      &trans
             >;
@@ -337,13 +329,26 @@
         FN_layer {
             bindings = <
 
-            &kp F1      &kp F1      &kp F3      &kp F4      &kp INS
+            &kp F1      &kp F1      &kp F3      &kp F4      &kp PSCRN
 
-            &kp F5      &kp F6      &kp F7      &kp F8      &kp PSCRN
+            &kp F5      &kp F6      &kp F7      &kp F8      &kp CAPS
 
-            &trans      &trans      &trans      &trans      &none
+            &kp F9      &kp F10     &kp F11     &kp F12     &kp INS
 
-                                                &none       &trans
+                                                &trans      &trans
+            >;
+        };
+
+        SYS_layer {
+            bindings = <
+
+            &bt BT_CLR  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &kp C_VOL_UP
+
+            &none       &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN
+
+            &td_rsbl    &ext_power EP_OFF   &out OUT_TOG    &ext_power EP_ON    &kp C_MUTE
+
+                                                &trans      &trans
             >;
         };
 
@@ -352,11 +357,11 @@
 
             &none       &none       &none       &none       &none
 
-            &to 1       &to 2       &to 3       &to 4       &to 5
+            &to 0       &to 1       &to 2       &to 3       &to 4
 
-            &none       &none       &none       &to 0       &none
+            &none       &none       &none       &to 5       &none
 
-                                                &none       &trans
+                                                &trans      &trans
             >;
         };
     };
