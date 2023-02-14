@@ -189,7 +189,7 @@
         combo_p {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 3>;
+            key-positions = <0 3>;
             bindings = <&kp P>;
         };
 
@@ -227,7 +227,7 @@
             layers = <0 1 2 3 4>;
             slow-release;
             key-positions = <5 16>;
-            bindings = <&kp LSHFT>;
+            bindings = <&sk LSHFT>;
         };
 
         combo_gui {
@@ -235,7 +235,7 @@
             layers = <0 1 2 3 4>;
             slow-release;
             key-positions = <6 16>;
-            bindings = <&kp LGUI>;
+            bindings = <&sk LGUI>;
         };
 
         combo_alt {
@@ -243,7 +243,7 @@
             layers = <0 1 2 3 4>;
             slow-release;
             key-positions = <7 16>;
-            bindings = <&kp LALT>;
+            bindings = <&sk LALT>;
         };
 
         combo_ctrl {
@@ -251,7 +251,7 @@
             layers = <0 1 2 3 4>;
             slow-release;
             key-positions = <8 16>;
-            bindings = <&kp LCTRL>;
+            bindings = <&sk LCTRL>;
         };
 //
 //control
@@ -259,14 +259,14 @@
             timeout-ms = <60>;
             layers = <0>;
             key-positions = <4 16>;
-            bindings = <&kp ESC>;
+            bindings = <&sk ESC>;
         };
 
         combo_del {
             timeout-ms = <60>;
             layers = <0>;
             key-positions = <9 16>;
-            bindings = <&kp DEL>;
+            bindings = <&sk DEL>;
         };
 //
     };
@@ -277,13 +277,13 @@
         DEF_layer {
             bindings = <
 
-            &kp Q       &kp O       &kp I       &kp E       &kp TAB
+            &kp Q       &kp O       &kp I       &kp E       &kp ESC
 
-            &kp A       &kp R       &kp S       &kp T       &kp BSPC
+            &kp A       &kp R       &kp S       &kp T       &kp TAB
 
             &kp Z       &kp Y       &kp D       &kp N       &kp RET
 
-                                                &to 6       &lo 6 SPACE
+                                                &kp BSPC    &lo 6 SPACE
             >;
         };
 
