@@ -255,18 +255,11 @@
         };
 //
 //control
-        combo_esc {
-            timeout-ms = <60>;
-            layers = <0>;
-            key-positions = <4 16>;
-            bindings = <&sk ESC>;
-        };
-
         combo_del {
             timeout-ms = <60>;
             layers = <0>;
-            key-positions = <9 16>;
-            bindings = <&sk DEL>;
+            key-positions = <4 16>;
+            bindings = <&kp DEL>;
         };
 //
     };
