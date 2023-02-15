@@ -197,7 +197,7 @@
         combo_g {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 2 3>;
+            key-positions = <2 3>;
             bindings = <&kp G>;
         };
 
