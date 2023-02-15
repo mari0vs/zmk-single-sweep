@@ -162,28 +162,28 @@
         combo_b {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <7 12>;
+            key-positions = <1 3>;
             bindings = <&kp B>;
         };
 
         combo_m {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <8 13>;
+            key-positions = <2 3>;
             bindings = <&kp M>;
         };
 
         combo_p {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 3>;
+            key-positions = <1 6>;
             bindings = <&kp P>;
         };
 
         combo_y {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <1 6>;
+            key-positions = <11 12>;
             bindings = <&kp Y>;
         };
 
@@ -204,7 +204,7 @@
         combo_d {
             timeout-ms = <80>;
             layers = <0>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             bindings = <&kp D>;
         };
 
@@ -245,11 +245,11 @@
         DEF_layer {
             bindings = <
 
-            &kp Z       &kp I       &kp E       &kp N       &kp ESC
+            &kp O       &kp I       &kp E       &kp N       &kp ESC
 
-            &kp O       &kp R       &kp S       &kp T       &kp TAB
+            &kp A       &kp R       &kp S       &kp T       &kp TAB
 
-            &kp A       &kp X       &kp C       &kp V       &kp RET
+            &kp Z       &kp X       &kp C       &kp V       &kp RET
 
                                                 &kp BSPC    &lo 6 SPACE
             >;
