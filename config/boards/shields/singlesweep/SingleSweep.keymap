@@ -245,11 +245,11 @@
         DEF_layer {
             bindings = <
 
-            &kp Z       &kp O       &kp I       &kp E       &kp ESC
+            &kp Z       &kp I       &kp E       &kp N       &kp ESC
 
-            &kp A       &kp R       &kp S       &kp T       &kp TAB
+            &kp O       &kp R       &kp S       &kp T       &kp TAB
 
-            &kp X       &kp C       &kp V       &kp N       &kp RET
+            &kp A       &kp X       &kp C       &kp V       &kp RET
 
                                                 &kp BSPC    &lo 6 SPACE
             >;
