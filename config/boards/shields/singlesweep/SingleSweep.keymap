@@ -232,7 +232,6 @@
 
         combo_def {
             timeout-ms = <60>;
-            layers = <-1>;
             key-positions = <15 16>;
             bindings = <&to 0>;
         };
