@@ -113,10 +113,10 @@
 
         td_rsbl: tap_dance_rsbl {
             compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_rebl";
+            label = "tap_dance_rsbl";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&reset>, <&bootloader>;
+            bindings = <&sys_reset>, <&bootloader>;
 //
         };
     };
