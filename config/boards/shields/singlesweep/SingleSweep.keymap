@@ -16,22 +16,22 @@
 
             &kp TAB     &kp N1      &kp N2      &kp N3      &kp T
 
-            &kp LSHIFT  &kp Q       &kp W       &kp E       &kp R
+            &kp LSHFT   &kp Q       &kp W       &kp E       &kp R
 
-            &kp LCTRL   &kp B       &kp D       &kp F       &kp GRAVE
+            &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &mo 1       &kp SPACE
+                                                &mo 1       &mt LCTRL SPACE
             >;
         };
 
         ALT_layer {
             bindings = <
 
-            &trans      &kp N4      &kp N5      &kp N6      &kp Y
+            &kp ESC     &kp N4      &kp N5      &kp N6      &kp Y
 
-            &trans      &kp P       &kp V       &kp G       &kp MINUS
+            &trans      &kp B       &kp O       &kp P       &kp LALT
 
-            &trans      &kp Z       &kp X       &kp C       &kp EQUAL
+            &trans      &kp Z       &kp X       &kp C       &kp V
 
                                                 &trans      &trans
             >;
