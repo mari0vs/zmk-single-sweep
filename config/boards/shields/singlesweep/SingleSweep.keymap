@@ -14,7 +14,7 @@
         GAM_layer {
             bindings = <
 
-            &kp TAB     &kp 1       &kp 2       &kp 3       &kp T
+            &kp TAB     &kp N1      &kp N2      &kp N3      &kp T
 
             &kp LSHIFT  &kp Q       &kp W       &kp E       &kp R
 
@@ -27,7 +27,7 @@
         ALT_layer {
             bindings = <
 
-            &trans      &kp 4       &kp 5       &kp 6       &kp Y
+            &trans      &kp N4      &kp N5      &kp N6      &kp Y
 
             &trans      &kp P       &kp V       &kp G       &kp MINUS
 
