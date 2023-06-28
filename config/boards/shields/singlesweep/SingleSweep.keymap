@@ -18,6 +18,7 @@
             quick-tap-ms = <300>;
             bindings = <&mo>, <&kp>;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
