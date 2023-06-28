@@ -8,30 +8,41 @@
 #include <dt-bindings/zmk/bt.h>
 
  / {
+    behaviors {
+        lo: layer_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "layer_mo";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <300>;
+            bindings = <&mo>, <&kp>;
+        };
+
     keymap {
         compatible = "zmk,keymap";
 
         GAM_layer {
             bindings = <
 
-            &kp TAB     &kp N1      &kp N2      &kp N3      &kp T
+            &kp TAB     &kp N1      &kp N2      &kp N3      &kp B
 
-            &kp LSHFT   &kp Q       &kp W       &kp E       &kp R
+            &kp Q       &kp W       &kp E       &kp R       &kp T
 
             &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &mo 1       &mt LCTRL SPACE
+                                                &kp LCTRL   &lo 1 SPACE
             >;
         };
 
         ALT_layer {
             bindings = <
 
-            &kp ESC     &kp N4      &kp N5      &kp N6      &kp Y
+            &kp ESC     &kp N4      &kp N5      &kp N6      &kp P
 
-            &trans      &kp B       &kp O       &kp P       &kp LALT
+            &kp GRAVE   &sk LALT    &sk LSHFT   &kp MINUS   &kp EQUAL
 
-            &trans      &kp Z       &kp X       &kp C       &kp V
+            &kp Z       &kp X       &kp C       &kp V       &kp FSLH
 
                                                 &trans      &trans
             >;
