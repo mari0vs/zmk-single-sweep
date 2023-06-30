@@ -23,34 +23,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_LSHFT {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <5 15>;
-            bindings = <&sk LSHFT>;
-        };
-
-        combo_LALT {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <6 15>;
-            bindings = <&sk LALT>;
-        };
-
-        combo_LCTRL {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <7 15>;
-            bindings = <&sk LCTRL>;
-        };
-
-        combo_P {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <4 15>;
-            bindings = <&kp P>;
-        };
-
         combo_4 {
             timeout-ms = <80>;
             layers = <0>;
@@ -71,6 +43,13 @@
             key-positions = <3 15>;
             bindings = <&kp N6>;
         };
+
+        combo_P {
+            timeout-ms = <80>;
+            layers = <0>;
+            key-positions = <4 15>;
+            bindings = <&kp P>;
+        };
     };
 
     keymap {
@@ -85,7 +64,7 @@
 
             &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &kp none    &kp SPACE
+                                                &kp LCTRL   &kp SPACE
             >;
         };
     };
