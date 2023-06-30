@@ -9,14 +9,14 @@
 
  / {
     behaviors {
-        lo: layer_mo {
+        th: tap_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "layer_mo";
+            label = "tap_hold";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <300>;
-            bindings = <&mo>, <&kp>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -26,22 +26,22 @@
         GAM_layer {
             bindings = <
 
-            &kp TAB     &kp N1      &kp N2      &kp N3      &kp B
+            &th TAB ESC &kp N1      &kp N2      &kp N3      &kp B
 
             &kp Q       &kp W       &kp E       &kp R       &kp T
 
             &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &kp LCTRL   &lo 1 SPACE
+                                                &kp LCTRL   &mo 1
             >;
         };
 
         ALT_layer {
             bindings = <
 
-            &kp ESC     &kp N4      &kp N5      &kp N6      &kp P
+            &trans      &kp N4      &kp N5      &kp N6      &kp P
 
-            &kp GRAVE   &sk LALT    &sk LSHFT   &kp MINUS   &kp EQUAL
+            &sk LSHFT   &sk LALT    &kp GRAVE   &kp SPACE   &kp RET
 
             &kp Z       &kp X       &kp C       &kp V       &kp FSLH
 
