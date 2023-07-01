@@ -8,6 +8,18 @@
 #include <dt-bindings/zmk/bt.h>
 
  / {
+
+    behaviors {
+        tm: tap_mo {
+            label = "tap_mo";
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <500>;
+            bindings = <&mo>, <&kp>;
+        };
+
     behaviors {
         sm: sl_mo {
             compatible = "zmk,behavior-hold-tap";
@@ -43,7 +55,7 @@
 
             &kp Z       &kp X       &kp C       &kp V       &kp RET
 
-                                                &kp SPACE   &sm 1 1
+                                                &kp LSHFT   &tm 1 SPACE
             >;
         };
 
