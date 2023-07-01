@@ -19,9 +19,7 @@
             quick-tap-ms = <500>;
             bindings = <&mo>, <&kp>;
         };
-    };
 
-    behaviors {
         sm: sl_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "sm";
@@ -30,17 +28,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&sl>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        combo_SEL {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <1 15>;
-            bindings = <&to 9>;
         };
     };
 
