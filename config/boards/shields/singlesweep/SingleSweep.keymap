@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_PL";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp P>, <&kp L>;
         };
 
@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_YK";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp Y>, <&kp K>;
         };
 
@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_FJ";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp F>, <&kp J>;
         };
 
@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_GH";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp G>, <&kp H>;
         };
 
@@ -56,7 +56,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_AS";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp A>, <&kp S>;
         };
 
@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_OD";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp O>, <&kp D>;
         };
 
@@ -72,7 +72,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_IN";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp I>, <&kp N>;
         };
 
@@ -80,7 +80,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ET";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp E>, <&kp T>;
         };
 
@@ -88,7 +88,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_UR";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp U>, <&kp R>;
         };
 
@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ZQ";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp Z>, <&kp Q>;
         };
 
@@ -104,7 +104,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_XW";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp X>, <&kp W>;
         };
 
@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CM";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp C>, <&kp M>;
         };
 
@@ -120,10 +120,10 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_VB";
             #binding-cells = <0>;
-            tapping-term-ms = <128>;
+            tapping-term-ms = <200>;
             bindings = <&kp V>, <&kp B>;
         };
-//symbols
+
         td_comma: tap_dance_comma {
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_comma";
@@ -211,14 +211,39 @@
             tapping-term-ms = <250>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
+    };
 
-        td_rsbl: tap_dance_rsbl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_rsbl";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&sys_reset>, <&bootloader>;
-//
+    combos {
+        compatible = "zmk,combos";
+
+        combo_l0 {
+            timeout-ms = <100>;
+            key-positions = <15 16>;
+            bindings = <&to 0>;
+        };
+
+        combo_LSHFT {
+            timeout-ms = <100>;
+            key-positions = <8 15>;
+            bindings = <&sk LSHFT>;
+        };
+
+        combo_LCTRL {
+            timeout-ms = <100>;
+            key-positions = <7 15>;
+            bindings = <&sk LCTRL>;
+        };
+
+        combo_LALT {
+            timeout-ms = <100>;
+            key-positions = <6 15>;
+            bindings = <&sk LALT>;
+        };
+
+        combo_LGUI {
+            timeout-ms = <100>;
+            key-positions = <5 15>;
+            bindings = <&sk LGUI>;
         };
     };
 
@@ -243,9 +268,9 @@
 
             &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &none
 
-            &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
+            &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp TAB
 
-            &kp INS     &none       &none       &kp PSCRN   &trans
+            &kp LALT    &none       &kp INS     &kp PSCRN   &trans
 
                                                 &trans      &trans
             >;
@@ -254,11 +279,11 @@
         SYM_layer {
             bindings = <
 
-            &td_grave   &td_bslh    &td_equal   &td_minus   &none
+            &none       &td_grave   &td_equal   &td_minus   &none
 
             &td_fslh    &td_sqt     &td_dot     &td_comma   &none
 
-            &none       &td_brc     &td_bkt     &td_par     &trans
+            &td_bslh    &td_brc     &td_bkt     &td_par     &trans
 
                                                 &trans      &trans
             >;
@@ -293,9 +318,9 @@
         LS_layer {
             bindings = <
 
-            &none       &to 1       &to 2       &to 3       &to 4
+            &none       &none       &none       &kp LGUI    &none
 
-            &sk LGUI    &sk LALT    &sk LCTRL   &sk LSHFT   &kp LGUI
+            &kp CAPS    &to 1       &to 2       &to 3       &to 4
 
             &none       &none       &none       &none       &none
 
