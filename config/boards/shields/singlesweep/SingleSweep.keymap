@@ -9,62 +9,54 @@
 
  / {
     behaviors {
-        th: tap_hold {
+        sm: sl_mo {
             compatible = "zmk,behavior-hold-tap";
-            label = "tap_hold";
+            label = "sm";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
-            bindings = <&kp>, <&kp>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&sl>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo_4 {
+        combo_SEL {
             timeout-ms = <80>;
             layers = <0>;
             key-positions = <1 15>;
-            bindings = <&kp N4>;
-        };
-
-        combo_5 {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <2 15>;
-            bindings = <&kp N5>;
-        };
-
-        combo_6 {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <3 15>;
-            bindings = <&kp N6>;
-        };
-
-        combo_P {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <4 15>;
-            bindings = <&kp P>;
+            bindings = <&to 9>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        GAM_layer {
+        ALPHA_layer {
             bindings = <
 
-            &th TAB ESC &kp N1      &kp N2      &kp N3      &kp B
+            &kp P       &kp Y       &kp F       &kp G       &kp BSPC
 
-            &kp Q       &kp W       &kp E       &kp R       &kp T
+            &kp A       &kp O       &kp I       &kp E       &kp U
 
-            &kp A       &kp S       &kp D       &kp F       &kp G
+            &kp Z       &kp X       &kp C       &kp V       &kp RET
 
-                                                &kp LCTRL   &kp SPACE
+                                                &kp SPACE   &sm 1
+            >;
+        };
+
+        ALPHA2_layer {
+            bindings = <
+
+            &kp L       &kp K       &kp J       &kp H       &kp TAB
+
+            &kp S       &kp D       &kp N       &kp T       &kp R
+
+            &kp Q       &kp W       &kp M       &kp B       &kp DEL
+
+                                                &trans      &trans
             >;
         };
     };
