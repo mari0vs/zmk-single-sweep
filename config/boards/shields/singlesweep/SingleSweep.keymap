@@ -19,6 +19,7 @@
             quick-tap-ms = <500>;
             bindings = <&mo>, <&kp>;
         };
+    };
 
     behaviors {
         sm: sl_mo {
