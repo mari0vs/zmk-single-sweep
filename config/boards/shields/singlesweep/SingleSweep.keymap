@@ -43,18 +43,83 @@
 
             &kp Z       &kp X       &kp C       &kp V       &kp RET
 
-                                                &kp LSHFT   &tm 1 SPACE
+                                                &sm 6 6     &tm 1 SPACE
             >;
         };
 
         ALPHA2_layer {
             bindings = <
 
-            &kp L       &kp K       &kp J       &kp H       &kp TAB
+            &kp L       &kp K       &kp J       &kp H       &trans
 
             &kp S       &kp D       &kp N       &kp T       &kp R
 
-            &kp Q       &kp W       &kp M       &kp B       &kp DEL
+            &kp Q       &kp W       &kp M       &kp B       &trans
+
+                                                &trans      &trans
+            >;
+        };
+
+        NAV_layer {
+            bindings = <
+
+            &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+
+            &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
+
+            &kp INS     &none       &none       &kp PSCRN   &trans
+
+                                                &trans      &trans
+            >;
+        };
+
+        NUM_layer {
+            bindings = <
+
+            &none       &kp N1      &kp N2      &kp N3      &trans
+
+            &kp N0      &kp N4      &kp N5      &kp N6      &none
+
+            &none       &kp N7      &kp N8      &kp N9      &trans
+
+                                                &trans      &trans
+            >;
+        };
+
+        SYM_layer {
+            bindings = <
+
+            &td_grave   &td_bslh    &td_minus   &td_equal   &trans
+
+            &td_fslh    &td_sqt     &td_comma   &td_dot     &none
+
+            &none       &td_brc     &td_bkt     &td_par     &trans
+
+                                                &trans      &trans
+            >;
+        };
+
+        FN_layer {
+            bindings = <
+
+            &kp F1      &kp F1      &kp F3      &kp F4      &none
+
+            &kp F5      &kp F6      &kp F7      &kp F8      &none
+
+            &kp F9      &kp F10     &kp F11     &kp F12     &none
+
+                                                &trans      &trans
+            >;
+        };
+
+        LS_layer {
+            bindings = <
+
+            &to 4       &to 3       &to 2       &to 1       &none
+
+            &sk LSHFT   &sk LGUI    &sk LALT    &sk LCTRL   &kp CAPS
+
+            &none       &none       &none       &kp LGUI    &to 5
 
                                                 &trans      &trans
             >;
