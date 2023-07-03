@@ -44,7 +44,7 @@
 
             &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &sh LSHFT LCTRL &kp SPACE GRAVE
+                                                &sh LSHFT LCTRL &th SPACE GRAVE
             >;
         };
     };
