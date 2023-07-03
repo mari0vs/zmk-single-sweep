@@ -15,7 +15,19 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <0>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    behaviors {
+        th0: tap_hold_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "tap_hold_0";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -38,13 +50,13 @@
         GAM_layer {
             bindings = <
 
-            &th TAB ESC &kp N1      &kp N2      &kp N3      &th P B
+            &th TAB ESC &kp N1      &kp N2      &kp N3      &th B P
 
             &kp Q       &kp W       &kp E       &kp R       &kp T
 
             &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &sh LSHFT LCTRL &th SPACE GRAVE
+                                                &sh LSHFT LCTRL &th0 SPACE GRAVE
             >;
         };
     };
