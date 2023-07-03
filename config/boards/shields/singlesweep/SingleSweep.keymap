@@ -58,7 +58,7 @@
         GAM_layer {
             bindings = <
 
-            &th TAB ESC &kp N1      &kp N2      &kp N3      &kp B
+            &th TAB ESC &kp N1      &kp N2      &kp N3      &tb B P
 
             &kp Q       &kp W       &kp E       &kp R       &kp T
 
