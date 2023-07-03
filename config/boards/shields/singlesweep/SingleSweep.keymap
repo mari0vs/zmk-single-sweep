@@ -43,13 +43,6 @@
             key-positions = <3 15>;
             bindings = <&kp N6>;
         };
-
-        combo_P {
-            timeout-ms = <80>;
-            layers = <0>;
-            key-positions = <4 15>;
-            bindings = <&kp P>;
-        };
     };
 
     keymap {
@@ -58,7 +51,7 @@
         GAM_layer {
             bindings = <
 
-            &th TAB ESC &kp N1      &kp N2      &kp N3      &tb B P
+            &th TAB ESC &kp N1      &kp N2      &kp N3      &th B P
 
             &kp Q       &kp W       &kp E       &kp R       &kp T
 
