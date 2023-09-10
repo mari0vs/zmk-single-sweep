@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 /{
-    
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,7 +20,7 @@
 
             &kp A       &kp S       &kp D       &kp F       &kp G
 
-                                                &kp LCTRL   &kp SPACE
+                                                &mo 1       &kp SPACE
             >;
         };
 
